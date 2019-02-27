@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Комардеев](https://up.htmlacademy.ru/htmlcss/24/user/977193).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Петров](https://htmlacademy.ru/profile/frozik).
 
 ---
 
