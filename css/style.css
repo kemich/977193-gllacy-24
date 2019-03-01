@@ -9,7 +9,7 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Roboto";
 
   src: url("../fonts/robotomedium.woff2") format("woff2"),
@@ -18,7 +18,7 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-family: "Roboto";
 
   src: url("../fonts/robotobold.woff2") format("woff2"),
