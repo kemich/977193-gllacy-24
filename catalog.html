@@ -17,11 +17,11 @@
     <header class="site-header">
         <nav class="site-header__nav">
             <a class="site-header__logo logo" href="index.html">
-                <img class="logo__img" src="/img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy" width="154" height="64">
+                <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy" width="154" height="64">
             </a>
-            <div class="site-header__contacts contacts" aria-label="Контактная информация">
-                <span class="contacts__worktime" aria-label="Режим работы">С 10 до 20, ежедневно</span>
-                <a class="contacts__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
+            <div class="site-header__info-block info-block" aria-label="Контактная информация">
+                <span class="info-block__worktime" aria-label="Режим работы">С 10 до 20, ежедневно</span>
+                <a class="info-block__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
             </div>
             <ul class="site-header__main-menu main-menu" aria-label="Навигация по сайту">
                 <li class="main-menu__item main-menu__item--dropdown" aria-haspopup="true">
@@ -51,13 +51,12 @@
                     <a class="main-menu__link" href="#">О компании</a>
                 </li>
             </ul>
-            <div class="site-header__search search" aria-label="Поиск по сайту">
-                <a class="search__link button button--search" href="#" aria-label="Перейти на страницу поиска по сайту">Поиск по сайту</a>
-                <form class="search__form" action="//echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
+            <form class="site-header__search search" action="//echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
+                <fieldset class="search__fieldset">
                     <input class="search__input" type="search" name="searchRequest" placeholder="Что ищем?" aria-label="Введите ваш запрос">
-                    <button class="search__button button" type="submit">Искать</button>
-                </form>
-            </div>
+                </fieldset>
+                <button class="search__button button button--search" type="submit">Искать</button>
+            </form>
             <div class="site-header__user user" aria-label="Личный кабинет">
                 <a class="user__link button button--user" href="#" aria-label="Перейти на страницу авторизации в личном кабинете">Вход в личный кабинет</a>
                 <form class="user__form user-form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма авторизации в личном кабинете">
