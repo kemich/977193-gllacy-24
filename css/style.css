@@ -62,6 +62,7 @@ body {
 }
 
 .button {
+    display: inline-block;
     text-decoration: none;
 
     border: none;
@@ -735,6 +736,74 @@ body {
     align-self: flex-end;
 }
 
+.benefits {
+    background-color: #efe3ce;
+    border-radius: 15px;
+    padding: 30px 20px;
+    background-image: url(../img/benefits-bg.png);
+    background-repeat: repeat;
+}
+
+
+.benefits__title {}
+
+.benefits__descr {
+    color: #323232;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+}
+
+.benefits__list {
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits__item {
+    padding: 17px 0 0 60px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.benefits__item:nth-child(2n-1) {
+    padding-right: 30px;
+}
+
+.benefits__item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 49px;
+    height: 49px;
+}
+
+.benefits__item:nth-child(1)::before {
+    background-image: url(../img/icons/ice-cream.svg);
+}
+
+.benefits__item:nth-child(2)::before {
+    background-image: url(../img/icons/cow.svg);
+}
+
+.benefits__item:nth-child(3)::before {
+    background-image: url(../img/icons/eco.svg);
+}
+
+.benefits__item:nth-child(4)::before {
+    background-image: url(../img/icons/thermometer.svg);
+}
+
 .breadcrumbs__list {
     display: flex;
     margin: 0;
@@ -1039,6 +1108,17 @@ body {
 
 .products-item:nth-child(n+5) {
     margin-top: -45px;
+}
+
+.products-item--tag::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 13px;
+    width: 61px;
+    height: 61px;
+    background-image: url(../img/icons/hit.svg);
+
 }
 
 .products-item__img {
@@ -1355,6 +1435,10 @@ body {
     flex-direction: column;
     width: 1146px;
     margin: 0 auto;
+}
+
+.site-content__bestsellers {
+    margin: 0 -13px;
 }
 
 .site-content__title {
