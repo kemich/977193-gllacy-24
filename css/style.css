@@ -773,7 +773,7 @@ body {
     position: relative;
 
     min-width: 194px;
-    padding: 9px 15px;
+    padding: 9px 20px;
 
     font-weight: 500;
     font-size: 16px;
@@ -942,7 +942,7 @@ body {
 .range-filter__price-controls {
     position: absolute;
     top: -22px;
-    left: 55px;
+    left: 60px;
 
     display: flex;
 }
