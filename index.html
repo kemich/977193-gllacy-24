@@ -51,12 +51,13 @@
                     <a class="main-menu__link" href="#">О Компании</a>
                 </li>
             </ul>
-            <form class="site-header__search search" action="//echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
-                <fieldset class="search__fieldset">
+            <div class="site-header__search search" aria-label="Поиск по сайту">
+                <a class="search__link button button--search" href="#" aria-label="Перейти на страницу поиска по сайту"><span class="visually-hidden">Поиск</span></a>
+                <form class="search__form" action="//echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
                     <input class="search__input" type="search" name="searchRequest" placeholder="Что ищем?" aria-label="Введите ваш запрос">
-                </fieldset>
-                <button class="search__button button button--search" type="submit"><span class="visually-hidden">Искать</span></button>
-            </form>
+                    <button class="search__button button button--search" type="submit"><span class="visually-hidden">Искать</span></button>
+                </form>
+            </div>
             <div class="site-header__user user" aria-label="Личный кабинет">
                 <a class="user__link button button--user" href="#" aria-label="Перейти на страницу авторизации в личном кабинете">Вход</a>
                 <form class="user__form user-form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма авторизации в личном кабинете">
@@ -104,12 +105,12 @@
         <section class="site-content__slider slider" aria-label="Показ слайдов">
             <h2 class="slider__title visually-hidden">Наши лучшие предложения</h2>
             <div class="slider__controls slider-controls">
-                <span class="slider-controls__item">Слайд 1</span>
+                <span class="slider-controls__item slider-controls__item--active">Слайд 1</span>
                 <span class="slider-controls__item">Слайд 2</span>
                 <span class="slider-controls__item">Слайд 3</span>
             </div>
             <ul class="slider__list" aria-label="Список слайдов">
-                <li class="slider__item slider-item">
+                <li class="slider__item slider-item slider-item--active">
                     <h3 class="slider-item__title">Крем-брюле и пломбир с малиновым джемом</h3>
                     <a class="slider-item__link button button--large" href="#" aria-label="Ознакомиться с предложением">Давайте оба!</a>
                 </li>
@@ -185,28 +186,30 @@
                 <li class="benefits__item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
         </section>
-        <section class="site-content__blog-news blog-news">
-            <h2 class="blog-news__title">Новое в нашем блоге</h2>
-            <ul class="blog-news__list">
-                <li class="blog-news__item">
-                    <a class="blog-news__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-                </li>
-            </ul>
-        </section>
-        <section class="site-content__subscribe subscribe">
-            <h2 class="subscribe__title visually-hidden">Подписка на нашу рассылку</h2>
-            <form class="subscribe__form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма подписки">
-                <p class="subscribe__descr">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <div class="subscribe__container">
-                    <input class="subscribe__input" type="email" name="email" placeholder="Электронная почта" aria-label="Введите ваш адрес электронной почты" required>
-                    <button class="subscribe__button button button--main" type="submit">Отправить</button>
-                </div>
-            </form>
-        </section>
 
+        <div class="site-content__row">
+            <section class="site-content__blog-news blog-news">
+                <h2 class="blog-news__title">Новое в нашем блоге</h2>
+                <ul class="blog-news__list">
+                    <li class="blog-news__item">
+                        <a class="blog-news__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="site-content__subscribe subscribe">
+                <h2 class="subscribe__title visually-hidden">Подписка на нашу рассылку</h2>
+                <form class="subscribe__form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма подписки">
+                    <p class="subscribe__descr">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                    <div class="subscribe__container">
+                        <input class="subscribe__input" type="email" name="email" placeholder="Электронная почта" aria-label="Введите ваш адрес электронной почты" required>
+                        <button class="subscribe__button button button--main" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
     <section class="site-content__contacts contacts">
-        <h2 class="contacts__title visually-hidden">Как нас найти</h2>
+        <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts__ya-map" id="map">
             <img class="contacts__img-map" src="img/map.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная 19/8" width="1250" height="430">
         </div>
