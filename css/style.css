@@ -1957,7 +1957,7 @@ body {
   display: flex;
   align-items: flex-end;
   width: 1146px;
-  margin: 0 auto;
+  margin: auto auto 0;
   padding: 20px 0 30px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.2);
