@@ -104,12 +104,12 @@
     <h1 class="visually-hidden">Интернет магазин мороженого Gllacy</h1>
     <section class="site-content__slider slider" aria-label="Показ слайдов">
       <h2 class="slider__title visually-hidden">Наши лучшие предложения</h2>
-      <div class="slider__controls slider-controls">
+      <div class="slider__controls slider-controls js-sliderSwitches">
         <span class="slider-controls__item slider-controls__item--active" tabindex="0">Слайд 1</span>
         <span class="slider-controls__item" tabindex="0">Слайд 2</span>
         <span class="slider-controls__item" tabindex="0">Слайд 3</span>
       </div>
-      <ul class="slider__list" aria-label="Список слайдов">
+      <ul class="slider__list js-sliderItems" aria-label="Список слайдов">
         <li class="slider__item slider-item slider-item--active">
           <h3 class="slider-item__title">Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="slider-item__link button button--large" href="#" aria-label="Ознакомиться с предложением">Давайте оба!</a>
@@ -219,7 +219,7 @@
       <h3 class="contacts__title">Для заказов по телефону:</h3>
       <a class="contacts__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
       <span class="contacts__worktime" aria-label="Режим работы">(с 10 до 20 ежедневно)</span>
-      <a class="contacts__link button button--main js-modalFeedback" href="#">Форма обратной связи</a>
+      <a class="contacts__link button button--main js-modalFeedbackOpen" href="#">Форма обратной связи</a>
     </div>
   </section>
   <footer class="site-footer">
@@ -266,9 +266,11 @@
     <div class="site-modals__modal modal modal--feedback js-modalFeedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="modal__content feedback-form" action="//echo.htmlacademy.ru" method="post">
+
         <input class="feedback-form__input" type="text" name="name" placeholder="Как вас зовут?">
         <input class="feedback-form__input" type="email" name="email" placeholder="Ваша почта для ответа?">
         <textarea class="feedback-form__textarea" name="comment" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+        <p class="feedback-form__descr">Мы обязательно вам ответим!</p>
         <button class="feedback-form__button button button--main" type="submit">Отправить</button>
       </form>
       <button class="modal__button button button--close js-modalFeedbackClose" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
