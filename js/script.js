@@ -152,5 +152,19 @@
       target = target.parentNode;
     }
   }, false);
+  sliderSwitches.addEventListener("keydown", function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      var target;
+      target = event.target;
+      while (target != sliderSwitches) {
+        if (target.classList.contains("slider-controls__item")) {
+          slideSwitch(target, slideIndex(target));
+          return;
+        }
+        target = target.parentNode;
+      }
+    }
+  }, false);
 
 }());
