@@ -8,18 +8,18 @@
   function init() {
     myMap = new ymaps.Map("map", {
       center: [59.939523, 30.329727],
-      behaviors: ['default', 'scrollZoom'],
+      behaviors: ["default", "scrollZoom"],
       zoom: 16
     });
     myMap.controls
-      .add('zoomControl', {
+      .add("zoomControl", {
         left: 5,
         top: 5
       })
     myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-      balloonContent: 'ул. Большая Конюшенная 19/8'
+      balloonContent: "ул. Большая Конюшенная 19/8"
     }, {
-      iconImageHref: 'img/map-tag.png',
+      iconImageHref: "img/map-tag.png",
       iconImageSize: [80, 140],
       iconImageOffset: [-40, -140]
     });
@@ -122,11 +122,20 @@
     var i;
     i = 0;
     for (i; i < sliderSwitches.children.length; i = i + 1) {
-      sliderSwitches.children[i].classList.remove('slider-controls__item--active');
-      sliderItems.children[i].classList.remove('slider-item--active');
+      sliderSwitches.children[i].classList.remove("slider-controls__item--active");
+      sliderItems.children[i].classList.remove("slider-item--active");
     }
-    node.classList.add('slider-controls__item--active');
-    sliderItems.children[index].classList.add('slider-item--active');
+    node.classList.add("slider-controls__item--active");
+    sliderItems.children[index].classList.add("slider-item--active");
+    if ((index + 1) % 1 == 0) {
+      document.body.style.cssText = "background - color: rgb(132, 157, 143);";
+    }
+    if ((index + 1) % 2 == 0) {
+      document.body.style.cssText = "background-color: rgb(137, 150, 166);";
+    }
+    if ((index + 1) % 3 == 0) {
+      document.body.style.cssText = "background-color: rgb(157, 139, 132);";
+    }
   }
 
   function slideIndex(node) {

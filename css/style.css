@@ -1470,6 +1470,10 @@ body {
   appearance: none;
 }
 
+.filter-form__select::-ms-expand {
+  display: none;
+}
+
 .filter-form__select:hover {
   color: #323232;
 
