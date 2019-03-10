@@ -368,6 +368,7 @@ body {
 }
 
 .main-menu__item {
+  height: 36px;
   margin-right: 2px;
 }
 
@@ -403,7 +404,7 @@ body {
   border-bottom: 1px solid rgba(248, 247, 244, 0.2);
 }
 
-.main-menu__link:hover,
+.main-menu__item--dropdown:hover .main-menu__link,
 .main-menu__link:focus {
   color: #323232;
 
@@ -451,17 +452,21 @@ body {
 
 .catalog__item--marked {
   position: relative;
-  font-weight: 700;
+
   margin-bottom: 10px;
+
+  font-weight: 700;
 }
 
 .catalog__item--marked::after {
   content: "";
   position: absolute;
+  right: 9px;
   bottom: -6px;
   left: 6px;
-  right: 9px;
+
   height: 1px;
+
   background-color: rgba(50, 50, 50, 0.2);
 }
 
@@ -486,17 +491,20 @@ body {
 
 .catalog__link--current {
   color: #ffffff;
+
   background-color: #d07058;
 }
 
 .catalog__link--current:hover,
 .catalog__link--current:focus {
   color: #323232;
+
   background-color: #fbded7;
 }
 
 .catalog__link--current:active {
   color: #323232;
+
   background-color: #f6b5a5;
 }
 
@@ -504,6 +512,7 @@ body {
   position: relative;
 
   display: block;
+  height: 36px;
 }
 
 .search__link {
@@ -512,6 +521,16 @@ body {
 
 .search:hover .search__form {
   display: flex;
+}
+
+.search:hover .button--search {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.search:hover .button--search::before {
+  background-image: url(../img/icons/loupe-dark.svg);
 }
 
 .search__form {
@@ -547,18 +566,20 @@ body {
 
 .search__input:hover {
   padding: 9px 14px;
+
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .search__input:focus {
   padding: 9px 14px;
+
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
 }
 
 .search__input::placeholder {
-  color: #999999;
   font-weight: 400;
+  color: #999999;
 }
 
 .search__button {
@@ -569,10 +590,22 @@ body {
 
 .user {
   position: relative;
+
+  height: 36px;
 }
 
 .user:hover .user__form {
   display: flex;
+}
+
+.user:hover .button--user {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user:hover .button--user::before {
+  background-image: url(../img/icons/entrance-dark.svg);
 }
 
 .user__link {
@@ -611,18 +644,20 @@ body {
 
 .user-form__input:hover {
   padding: 9px 14px;
+
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .user-form__input:focus {
   padding: 9px 14px;
+
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
 }
 
 .user-form__input::placeholder {
-  color: #999999;
   font-weight: 400;
+  color: #999999;
 }
 
 .user-form__button {
@@ -654,10 +689,22 @@ body {
 
 .cart {
   position: relative;
+
+  height: 36px;
 }
 
 .cart:hover .cart__dropdown {
   display: flex;
+}
+
+.cart:hover .button--cart {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.cart:hover .button--cart::before {
+  background-image: url(../img/icons/basket-dark.svg);
 }
 
 .cart--not-empty .cart__link {
@@ -804,13 +851,13 @@ body {
   position: absolute;
   bottom: 80px;
   left: 0;
+  z-index: 10;
 
   display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  z-index: 10;
 }
 
 .slider-controls__item {
@@ -889,6 +936,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: -10;
+
   width: 300px;
   height: 300px;
   margin: auto;
@@ -1069,6 +1117,7 @@ body {
   width: 560px;
   min-height: 220px;
   padding: 30px 20px;
+
   background: #ffffff;
   background-image: url(../img/strawberry-icecream-bg.jpg);
   background-repeat: no-repeat;
@@ -1161,17 +1210,19 @@ body {
 }
 
 .subscribe__input::placeholder {
-  color: #999999;
   font-weight: 400;
+  color: #999999;
 }
 
 .subscribe__input:hover {
   padding: 9px 14px;
+
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .subscribe__input:focus {
   padding: 9px 14px;
+
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
 }
@@ -1264,17 +1315,19 @@ body {
 }
 
 .breadcrumbs__item {
-  margin: 0 0 5px 0
+  margin: 0 0 5px 0;
 }
 
 .breadcrumbs__item:not(:last-child)::after {
   content: "»";
+
   margin: 0 5px 0 3px;
 }
 
 .breadcrumbs__link {
   color: #ffffff;
   text-decoration: none;
+
   border-bottom: 1px solid rgba(248, 247, 244, 0.3);
 }
 
@@ -1282,6 +1335,7 @@ body {
 .breadcrumbs__link:focus,
 .breadcrumbs__link:active {
   color: #ffbc9e;
+
   border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
@@ -1337,8 +1391,8 @@ body {
   cursor: pointer;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .filter-form__select:hover {
@@ -1868,29 +1922,30 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.site-modals {}
+
 
 .modal {
+  box-sizing: border-box;
   width: 478px;
   min-height: 443px;
+  padding: 20px 25px 25px;
+
   background-color: #f8f7f4;
   border-radius: 15px;
-  padding: 20px 25px 25px;
-  box-sizing: border-box;
 }
 
-.modal__content {}
+
 
 .feedback-form {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .feedback-form__input,
 .feedback-form__textarea {
-  margin: 0 0 20px;
   width: 267px;
+  margin: 0 0 20px;
   padding: 10px 15px;
 
   font-weight: 700;
@@ -1904,44 +1959,48 @@ body {
 }
 
 .feedback-form__textarea {
-  margin: 0 0 25px;
-  width: auto;
-  resize: none;
-  height: 155px;
   box-sizing: border-box;
+  width: auto;
+  height: 155px;
+  margin: 0 0 25px;
+
+  resize: none;
 }
 
 .feedback-form__input::placeholder,
 .feedback-form__textarea::placeholder {
-  color: #999999;
   font-weight: 400;
+  color: #999999;
 }
 
 .feedback-form__input:hover,
 .feedback-form__textarea:hover {
   padding: 9px 14px;
+
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .feedback-form__input:focus,
 .feedback-form__textarea:focus {
   padding: 9px 14px;
+
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
 }
 
 .feedback-form__descr {
-  margin: 0 0 25px;
-  color: #323232;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
   order: -1;
+  margin: 0 0 25px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
 }
 
 .feedback-form__button {
-  margin-top: auto;
   align-self: flex-end;
+  margin-top: auto;
 }
 
 .modal__button {
@@ -2023,8 +2082,8 @@ body {
 
 .site-content__breadcrumbs {
   order: -1;
-  margin: 0;
   width: 900px;
+  margin: 0;
 }
 
 .site-content__products-filter {
@@ -2050,11 +2109,11 @@ body {
 }
 
 .site-modals__wrap {
-  display: none;
   position: fixed;
   top: 0;
   z-index: 30;
 
+  display: none;
   width: 100%;
   height: 100%;
 
