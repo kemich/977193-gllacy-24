@@ -332,8 +332,9 @@ body {
 }
 
 .logo__img {
-  vertical-align: middle;
   height: 72px;
+
+  vertical-align: middle;
 }
 
 .info-block {
@@ -876,8 +877,6 @@ body {
   font-size: 0;
 }
 
-
-
 .slider-controls__item:last-child {
   margin-right: 0;
 }
@@ -982,8 +981,6 @@ body {
   margin-bottom: 60px;
 }
 
-
-
 .specials {
   z-index: 5;
 }
@@ -1020,7 +1017,6 @@ body {
   background-image: url(../img/choco-bg.jpg);
 }
 
-
 .specials-item__title {
   margin: 0 0 15px 0;
 
@@ -1052,9 +1048,6 @@ body {
   background-repeat: repeat;
   border-radius: 15px;
 }
-
-
-
 
 .benefits__descr {
   margin: 0 0 8px 0;
@@ -1093,8 +1086,8 @@ body {
 }
 
 .benefits__item:nth-child(2n) {
-  padding-left: 70px;
   padding-right: 5px;
+  padding-left: 70px;
 }
 
 .benefits__item::before {
@@ -1179,8 +1172,6 @@ body {
   background-image: url(../img/subscribe-bg.png);
   border-radius: 15px;
 }
-
-
 
 .subscribe__form {
   display: flex;
@@ -1406,8 +1397,8 @@ body {
   cursor: pointer;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .filter-form__select:hover {
@@ -1942,8 +1933,6 @@ body {
   margin-bottom: 5px;
 }
 
-
-
 .modal {
   box-sizing: border-box;
   width: 478px;
@@ -1953,8 +1942,6 @@ body {
   background-color: #f8f7f4;
   border-radius: 15px;
 }
-
-
 
 .feedback-form {
   display: flex;
