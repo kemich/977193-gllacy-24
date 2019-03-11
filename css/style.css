@@ -1467,8 +1467,8 @@ body {
         background-color 0.3s;
 
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .filter-form__select::-ms-expand {
@@ -1486,6 +1486,7 @@ body {
 
     background-color: #ffffff;
     background-image: url(../img/icons/icon-down-dir.svg);
+
 }
 
 .filter-form__option {
@@ -2273,42 +2274,42 @@ body {
 }
 
 @keyframes bounce {
-  0% {
+    0% {
         transform: translateY(-2000px);
-  }
+    }
 
-  70% {
+    70% {
         transform: translateY(30px);
-  }
+    }
 
-  90% {
+    90% {
         transform: translateY(-10px);
-  }
+    }
 
-  100% {
+    100% {
         transform: translateY(0);
-  }
+    }
 }
 
 @keyframes shake {
 
-  0%,
+    0%,
     100% {
         transform: translateX(0);
-  }
+    }
 
-  10%,
+    10%,
     30%,
     50%,
     70%,
     90% {
         transform: translateX(-10px);
-  }
+    }
 
-  20%,
+    20%,
     40%,
     60%,
     80% {
         transform: translateX(10px);
-  }
+    }
 }
