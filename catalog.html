@@ -19,14 +19,14 @@
       <a class="site-header__logo logo" href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy" width="154" height="70">
       </a>
-      <div class="site-header__info-block info-block" aria-label="Контактная информация">
-        <span class="info-block__worktime" aria-label="Режим работы">С 10 до 20, ежедневно</span>
+      <div class="site-header__info-block info-block">
+        <span class="info-block__worktime">С 10 до 20, ежедневно</span>
         <a class="info-block__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
       </div>
-      <ul class="site-header__main-menu main-menu" aria-label="Навигация по сайту">
+      <ul class="site-header__main-menu main-menu">
         <li class="main-menu__item main-menu__item--dropdown" aria-haspopup="true">
           <a class="main-menu__link main-menu__link--current" href="catalog.html">Каталог</a>
-          <ul class="main-menu__catalog catalog" aria-label="Каталог товаров">
+          <ul class="main-menu__catalog catalog">
             <li class="catalog__item catalog__item--marked">
               <a class="catalog__link" href="catalog.html">Новинки</a>
             </li>
@@ -51,16 +51,16 @@
           <a class="main-menu__link" href="#">О Компании</a>
         </li>
       </ul>
-      <div class="site-header__search search" aria-label="Поиск по сайту">
+      <div class="site-header__search search">
         <a class="search__link button button--search" href="#" aria-label="Перейти на страницу поиска по сайту"><span class="visually-hidden">Поиск</span></a>
-        <form class="search__form" action="//echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
+        <form class="search__form" action="//echo.htmlacademy.ru" method="get">
           <input class="search__input" type="search" name="searchRequest" placeholder="Что ищем?" autocomplete="off" aria-label="Введите ваш запрос">
           <button class="search__button button button--search" type="submit"><span class="visually-hidden">Искать</span></button>
         </form>
       </div>
-      <div class="site-header__user user" aria-label="Личный кабинет">
+      <div class="site-header__user user">
         <a class="user__link button button--user" href="#" aria-label="Перейти на страницу авторизации в личном кабинете">Вход</a>
-        <form class="user__form user-form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма авторизации в личном кабинете">
+        <form class="user__form user-form" action="//echo.htmlacademy.ru" method="post">
           <input class="user-form__input" type="email" name="login" placeholder="Электронная почта" autocomplete="off" aria-label="Введите ваш адрес электронной почты">
           <input class="user-form__input" type="password" name="password" placeholder="Пароль" autocomplete="off" aria-label="Введите ваш пароль">
           <div class="user-form__row">
@@ -72,11 +72,11 @@
           </div>
         </form>
       </div>
-      <div class="site-header__cart cart cart--not-empty" aria-label="Корзина">
+      <div class="site-header__cart cart cart--not-empty">
         <a class="cart__link button button--cart" href="#" aria-label="Перейти в корзину">2 товара</a>
         <div class="cart__dropdown">
-          <ul class="cart__list" aria-label="Товары в корзине">
-            <li class="cart__item cart-item" aria-label="Товар 1">
+          <ul class="cart__list">
+            <li class="cart__item cart-item">
               <img class="cart-item__img" src="img/cart-product-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
               <a class="cart-item__link" href="#">Пломбир с апельсиновым джемом</a>
               <span class="cart-item__qtty">2 кг</span>
@@ -84,7 +84,7 @@
               <span class="cart-item__total-price">300 руб.</span>
               <a class="cart-item__remove button button--remove js-cart-item-remove" href=""><span class="visually-hidden">Удалить из корзины</span></a>
             </li>
-            <li class="cart__item cart-item" aria-label="Товар 2">
+            <li class="cart__item cart-item">
               <img class="cart-item__img" src="img/cart-product-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
               <a class="cart-item__link" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
               <span class="cart-item__qtty">1,5 кг</span>
@@ -103,7 +103,7 @@
     <h1 class="site-content__title">Сливочное мороженое</h1>
     <section class="site-content__breadcrumbs breadcrumbs">
       <h2 class="visually-hidden">Вложенность раздела</h2>
-      <ul class="breadcrumbs__list" aria-label="Список разделов, по уровню вложенности">
+      <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
@@ -174,47 +174,47 @@
     <section class="site-content__products products">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="products__list">
-        <li class="products__item products-item" aria-label="Товар 1">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">310 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">310 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 2">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">380 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">380 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 3">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">355 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">355 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 4">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">415 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">415 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 5">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-5.jpg" alt="Сливочное с брусничным джемом" width="269" height="269">
           </div>
@@ -222,40 +222,40 @@
             <a class="products-item__link" href="#">Сливочное с брусничным джемом
             </a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">325 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">325 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 6">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-6.jpg" alt="Сливочно-черничное с цельными ягодами черники " width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочно-черничное с цельными ягодами черники </a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">410 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">410 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 7">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">375 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">375 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 8">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-8.jpg" alt="Сливочное с шоколадной стружкой" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное с шоколадной стружкой</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">320 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">320 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 9">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-9.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="269" height="269">
           </div>
@@ -263,37 +263,37 @@
             <a class="products-item__link" href="#">Сливочно-ванильное с кусочками шоколада
             </a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">440 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">440 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 10">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-10.jpg" alt="Сливочноe с ментоловым сиропом" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочноe с ментоловым сиропом</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">435 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">435 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 11">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-11.jpg" alt="Сливочное с кусочками черного шоколада" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное с кусочками черного шоколада</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">355 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">355 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item" aria-label="Товар 12">
+        <li class="products__item products-item">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-12.jpg" alt="Сливочное с мятным сиропом" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное с мятным сиропом</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">420 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">420 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
       </ul>
@@ -326,7 +326,7 @@
     </section>
   </main>
   <footer class="site-footer">
-    <ul class="site-footer__socials socials" aria-label="Наши соцсети:">
+    <ul class="site-footer__socials socials">
       <li class="socials__item">
         <a class="socials__link" href="#" title="Мы в Twitter">
           <img class="socials__img" src="img/icons/twitter.svg" alt="Мы в Twitter" width="36" height="36">
@@ -348,7 +348,7 @@
         </a>
       </li>
     </ul>
-    <ul class="site-footer__info-menu info-menu" aria-label="Сервисное меню">
+    <ul class="site-footer__info-menu info-menu">
       <li class="info-menu__item info-menu__item--marked">
         <a class="info-menu__link" href="#">Для поставщиков</a>
       </li>
@@ -362,7 +362,7 @@
         <a class="info-menu__link" href="#">Экологические стандарты</a>
       </li>
     </ul>
-    <div class="site-footer__studio-link studio-link" aria-label="Информация о разработчике"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
+    <div class="site-footer__studio-link studio-link"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
   </footer>
 </body>
 

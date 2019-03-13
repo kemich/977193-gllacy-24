@@ -19,14 +19,14 @@
       <a class="site-header__logo logo" href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy" width="154" height="64">
       </a>
-      <div class="site-header__info-block info-block" aria-label="Контактная информация">
-        <span class="info-block__worktime" aria-label="Режим работы">С 10 до 20, ежедневно</span>
+      <div class="site-header__info-block info-block">
+        <span class="info-block__worktime">С 10 до 20, ежедневно</span>
         <a class="info-block__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
       </div>
-      <ul class="site-header__main-menu main-menu" aria-label="Навигация по сайту">
+      <ul class="site-header__main-menu main-menu">
         <li class="main-menu__item main-menu__item--dropdown" aria-haspopup="true">
           <a class="main-menu__link" href="catalog.html">Каталог</a>
-          <ul class="main-menu__catalog catalog" aria-label="Каталог товаров">
+          <ul class="main-menu__catalog catalog">
             <li class="catalog__item catalog__item--marked">
               <a class="catalog__link" href="catalog.html">Новинки</a>
             </li>
@@ -51,16 +51,16 @@
           <a class="main-menu__link" href="#">О Компании</a>
         </li>
       </ul>
-      <div class="site-header__search search" aria-label="Поиск по сайту">
+      <div class="site-header__search search">
         <a class="search__link button button--search" href="#" aria-label="Перейти на страницу поиска по сайту"><span class="visually-hidden">Поиск</span></a>
-        <form class="search__form" action="//echo.htmlacademy.ru" method="get" aria-label="Форма поиска по сайту">
+        <form class="search__form" action="//echo.htmlacademy.ru" method="get">
           <input class="search__input" type="search" name="searchRequest" placeholder="Что ищем?" autocomplete="off" aria-label="Введите ваш запрос">
           <button class="search__button button button--search" type="submit"><span class="visually-hidden">Искать</span></button>
         </form>
       </div>
-      <div class="site-header__user user" aria-label="Личный кабинет">
+      <div class="site-header__user user">
         <a class="user__link button button--user" href="#" aria-label="Перейти на страницу авторизации в личном кабинете">Вход</a>
-        <form class="user__form user-form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма авторизации в личном кабинете">
+        <form class="user__form user-form" action="//echo.htmlacademy.ru" method="post">
           <input class="user-form__input" type="email" name="login" placeholder="Электронная почта" autocomplete="off" aria-label="Введите ваш адрес электронной почты">
           <input class="user-form__input" type="password" name="password" placeholder="Пароль" autocomplete="off" aria-label="Введите ваш пароль">
           <div class="user-form__row">
@@ -72,11 +72,11 @@
           </div>
         </form>
       </div>
-      <div class="site-header__cart cart" aria-label="Корзина">
+      <div class="site-header__cart cart">
         <a class="cart__link button button--cart" href="#" aria-label="Перейти в корзину">Пусто</a>
         <div class="cart__dropdown">
-          <ul class="cart__list" aria-label="Товары в корзине">
-            <li class="cart__item cart-item" aria-label="Товар 1">
+          <ul class="cart__list">
+            <li class="cart__item cart-item">
               <img class="cart-item__img" src="img/cart-product-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
               <a class="cart-item__link" href="#">Пломбир с апельсиновым джемом</a>
               <span class="cart-item__qtty">2 кг</span>
@@ -84,7 +84,7 @@
               <span class="cart-item__total-price">300 руб.</span>
               <a class="cart-item__remove button button--remove js-cart-item-remove" href=""><span class="visually-hidden">Удалить из корзины</span></a>
             </li>
-            <li class="cart__item cart-item" aria-label="Товар 2">
+            <li class="cart__item cart-item">
               <img class="cart-item__img" src="img/cart-product-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
               <a class="cart-item__link" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
               <span class="cart-item__qtty">1,5 кг</span>
@@ -101,14 +101,14 @@
   </header>
   <main class="site-content" aria-label="Главная страница">
     <h1 class="visually-hidden">Интернет магазин мороженого Gllacy</h1>
-    <section class="site-content__slider slider" aria-label="Показ слайдов">
+    <section class="site-content__slider slider">
       <h2 class="slider__title visually-hidden">Наши лучшие предложения</h2>
       <div class="slider__controls slider-controls js-sliderSwitches">
         <span class="slider-controls__item slider-controls__item--active" tabindex="0">Слайд 1</span>
         <span class="slider-controls__item" tabindex="0">Слайд 2</span>
         <span class="slider-controls__item" tabindex="0">Слайд 3</span>
       </div>
-      <ul class="slider__list js-sliderItems" aria-label="Список слайдов">
+      <ul class="slider__list js-sliderItems">
         <li class="slider__item slider-item slider-item--active">
           <h3 class="slider-item__title">Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="slider-item__link button button--large" href="#" aria-label="Ознакомиться с предложением">Давайте оба!</a>
@@ -141,44 +141,44 @@
     <section class="site-content__bestsellers products">
       <h2 class="products__title visually-hidden">Хиты продаж</h2>
       <ul class="products__list">
-        <li class="products__item products-item products-item--tag" aria-label="Товар 1">
+        <li class="products__item products-item products-item--tag">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">310 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">310 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item products-item--tag" aria-label="Товар 1">
+        <li class="products__item products-item products-item--tag">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">380 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">380 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item products-item--tag" aria-label="Товар 1">
+        <li class="products__item products-item products-item--tag">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">355 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">355 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
-        <li class="products__item products-item products-item--tag" aria-label="Товар 1">
+        <li class="products__item products-item products-item--tag">
           <div class="products-item__img-wrap">
             <img class="products-item__img" src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="269" height="269">
           </div>
           <h3 class="products-item__title">
             <a class="products-item__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
-          <b class="products-item__price" aria-label="Цена товара:">415 ₽<span class="products-item__unit">/кг</span></b>
+          <b class="products-item__price">415 ₽<span class="products-item__unit">/кг</span></b>
           <a class="products-item__button button button--main" href="#">Быстрый просмотр</a>
         </li>
       </ul>
@@ -204,7 +204,7 @@
       </section>
       <section class="site-content__subscribe subscribe">
         <h2 class="subscribe__title visually-hidden">Подписка на нашу рассылку</h2>
-        <form class="subscribe__form" action="//echo.htmlacademy.ru" method="post" aria-label="Форма подписки">
+        <form class="subscribe__form" action="//echo.htmlacademy.ru" method="post">
           <p class="subscribe__descr">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <div class="subscribe__container">
             <input class="subscribe__input" type="email" name="email" placeholder="Электронная почта" aria-label="Введите ваш адрес электронной почты" required>
@@ -224,12 +224,12 @@
       <address class="contacts__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
       <h3 class="contacts__title">Для заказов по телефону:</h3>
       <a class="contacts__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
-      <span class="contacts__worktime" aria-label="Режим работы">(с 10 до 20 ежедневно)</span>
+      <span class="contacts__worktime">(с 10 до 20 ежедневно)</span>
       <a class="contacts__link button button--main js-modalFeedbackOpen" href="#">Форма обратной связи</a>
     </div>
   </section>
   <footer class="site-footer">
-    <ul class="site-footer__socials socials" aria-label="Наши соцсети:">
+    <ul class="site-footer__socials socials">
       <li class="socials__item">
         <a class="socials__link" href="#" title="Мы в Twitter">
           <img class="socials__img" src="img/icons/twitter.svg" alt="Мы в Twitter" width="36" height="36">
@@ -251,7 +251,7 @@
         </a>
       </li>
     </ul>
-    <ul class="site-footer__info-menu info-menu" aria-label="Сервисное меню">
+    <ul class="site-footer__info-menu info-menu">
       <li class="info-menu__item info-menu__item--marked">
         <a class="info-menu__link" href="#">Для поставщиков</a>
       </li>
@@ -265,7 +265,7 @@
         <a class="info-menu__link" href="#">Экологические стандарты</a>
       </li>
     </ul>
-    <div class="site-footer__studio-link studio-link" aria-label="Информация о разработчике"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
+    <div class="site-footer__studio-link studio-link"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
   </footer>
   <section class="site-modals">
     <div class="site-modals__wrap js-modalWrap"></div>
