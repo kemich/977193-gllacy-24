@@ -587,11 +587,12 @@ body {
 
 .search__input {
   width: 100%;
+  height: 42px;
   padding: 10px 15px;
 
   font-weight: 700;
   font-size: 14px;
-  height: 24px;
+  line-height: 24px;
   color: #323232;
 
   background-color: #ffffff;
