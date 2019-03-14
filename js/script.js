@@ -1,6 +1,8 @@
 (function () {
   "use strict";
 
+  document.querySelector(".contacts__img-map").style.cssText = "display: none;";
+
   ymaps.ready(init);
 
   var myMap, myPlacemark;

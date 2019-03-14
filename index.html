@@ -10,7 +10,7 @@
   <meta name="description" content="Глейси - проект сайта интернет-магазина гаджетов, HTML Academy">
   <meta name="keywords" content="шаблон сайта, дизайн сайта, проект интернет-магазина, верстка">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.origin.css">
 </head>
 
 <body>
@@ -217,15 +217,17 @@
   <section class="site-contacts contacts">
     <h2 class="visually-hidden">Как нас найти</h2>
     <div class="contacts__ya-map" id="map">
-      <img class="contacts__img-map" src="img/map.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная 19/8" width="1250" height="430">
+      <img class="contacts__img-map" src="img/map.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная 19/8" width="1200" height="430">
     </div>
-    <div class="contacts__container">
-      <h3 class="contacts__title">Адрес главного офиса и офлайн-магазина:</h3>
-      <address class="contacts__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
-      <h3 class="contacts__title">Для заказов по телефону:</h3>
-      <a class="contacts__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
-      <span class="contacts__worktime">(с 10 до 20 ежедневно)</span>
-      <a class="contacts__link button button--main js-modalFeedbackOpen" href="#">Форма обратной связи</a>
+    <div class="contacts__wrap">
+      <div class="contacts__container">
+        <h3 class="contacts__title">Адрес главного офиса и офлайн-магазина:</h3>
+        <address class="contacts__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+        <h3 class="contacts__title">Для заказов по телефону:</h3>
+        <a class="contacts__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
+        <span class="contacts__worktime">(с 10 до 20 ежедневно)</span>
+        <a class="contacts__link button button--main js-modalFeedbackOpen" href="#">Форма обратной связи</a>
+      </div>
     </div>
   </section>
   <footer class="site-footer">
@@ -265,7 +267,7 @@
         <a class="info-menu__link" href="#">Экологические стандарты</a>
       </li>
     </ul>
-    <div class="site-footer__studio-link studio-link"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
+    <div class="site-footer__studio-link studio-link"><a class="studio-link__img-link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"></a><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
   </footer>
   <section class="site-modals">
     <div class="site-modals__wrap js-modalWrap"></div>
@@ -282,7 +284,7 @@
     </div>
   </section>
   <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
