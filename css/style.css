@@ -1553,6 +1553,10 @@ body {
   outline: none;
 }
 
+.contacts {
+  margin-bottom: 430px;
+}
+
 .contacts__ya-map {
   height: 430px;
 
@@ -1567,7 +1571,6 @@ body {
   position: relative;
 
   width: 1146px;
-  height: 430px;
   margin: -430px auto 0;
 }
 
