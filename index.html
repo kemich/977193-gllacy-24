@@ -16,7 +16,7 @@
 <body>
   <header class="site-header">
     <nav class="site-header__nav">
-      <a class="site-header__logo logo" href="index.html">
+      <a class="site-header__logo logo">
         <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy" width="154" height="64">
       </a>
       <div class="site-header__info-block info-block">
@@ -104,9 +104,9 @@
     <section class="site-content__slider slider">
       <h2 class="slider__title visually-hidden">Наши лучшие предложения</h2>
       <div class="slider__controls slider-controls js-sliderSwitches">
-        <span class="slider-controls__item slider-controls__item--active" tabindex="0">Слайд 1</span>
-        <span class="slider-controls__item" tabindex="0">Слайд 2</span>
-        <span class="slider-controls__item" tabindex="0">Слайд 3</span>
+        <a class="slider-controls__item slider-controls__item--active" href="#">Слайд 1</a>
+        <a class="slider-controls__item" href="#">Слайд 2</a>
+        <a class="slider-controls__item" href="#">Слайд 3</a>
       </div>
       <ul class="slider__list js-sliderItems">
         <li class="slider__item slider-item slider-item--active">
@@ -226,7 +226,7 @@
         <h3 class="contacts__title">Для заказов по телефону:</h3>
         <a class="contacts__phone" href="tel:+78124502525" aria-label="Наш телефон">8 812 450-25-25</a>
         <span class="contacts__worktime">(с 10 до 20 ежедневно)</span>
-        <a class="contacts__link button button--main js-modalFeedbackOpen" href="#">Форма обратной связи</a>
+        <a class="contacts__link button button--main js-modalFeedbackOpen" href="feedback.html">Форма обратной связи</a>
       </div>
     </div>
   </section>
@@ -267,7 +267,7 @@
         <a class="info-menu__link" href="#">Экологические стандарты</a>
       </li>
     </ul>
-    <div class="site-footer__studio-link studio-link"><a class="studio-link__img-link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"></a><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="//htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
+    <div class="site-footer__studio-link studio-link"><a class="studio-link__img-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img class="studio-link__img" src="img/icons/logo-htmlacademy.svg" alt="Сделано в HTML Academy © 2019" width="108" height="39"></a><b class="studio-link__descr">Сделано в <a class="studio-link__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</b></div>
   </footer>
   <section class="site-modals">
     <div class="site-modals__wrap js-modalWrap"></div>
